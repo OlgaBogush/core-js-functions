@@ -229,7 +229,7 @@ function partialUsingArguments(fn, ...args1) {
  */
 function getIdGeneratorFunction(startFrom) {
   let a = startFrom;
-  return function () {
+  return function idGenerator() {
     const res = a;
     a += 1;
     return res;
